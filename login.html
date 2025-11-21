@@ -54,16 +54,6 @@
         .login-box button:hover {
             opacity: 0.85;
         }
-        @keyframes fadeSlide {
-            0% { opacity: 0; transform: translateY(25px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes glowPulse {
-            0% { box-shadow: 0 0 10px rgba(10,10,10,0.2); }
-            50% { box-shadow: 0 0 18px rgba(10,10,10,0.35); }
-            100% { box-shadow: 0 0 10px rgba(10,10,10,0.2); }
-        }
 
         .login-box {
             animation: fadeSlide 0.9s ease-out;
@@ -90,11 +80,8 @@
             border-radius: 50%;
             animation: floatUp linear infinite;
         }
-        @keyframes floatUp {
-            0% { transform: translateY(0); opacity: 0; }
-            10% { opacity: 1; }
-            100% { transform: translateY(-120vh); opacity: 0; }
-        }
+
+
 </style>
 </head>
 <body>
