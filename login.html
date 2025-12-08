@@ -86,10 +86,14 @@
 </head>
 <body>
     <img src="doomlogin.jpeg" alt="Background Image" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1; object-fit: cover;">
+
     <div class="login-box" style="backdrop-filter: blur(12px); background: rgba(253,245,230,0.6); font-family: Teko; font-size: 40px;">
         <h2>Login</h2>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+        
+        <input type="text" id="username" placeholder="Username" required>
+        
+        <input type="password" id="password" placeholder="Password" required>
+        
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; font-size: 14px; color: #0A0A0A;">
             <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
                 <input type="checkbox" style="width: 16px; height: 16px;">
@@ -97,8 +101,13 @@
             </label>
             <a href="#" style="color: #0A0A0A; text-decoration: none; font-size: 14px;">Forgot Password?</a>
         </div>
-        <button>Sign In</button>
+
+        <p id="error-msg" style="color: red;font-size: 20px; text-align: center; display: none; margin-bottom: 10px;"></p>
+        
+        <button onclick="validateLogin()">Sign In</button>
     </div>
     <div class="float-container"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -353,6 +353,32 @@ body{
 .social-links a:hover{
   color: #C4B5A0;
 }
+.hamburger{
+  display: none;
+  font-size: 2rem;
+  color: #FDF5E6;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; 
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(13, 13, 13, 0.95);
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #FDF5E6;
+  }
+  .menu.active {
+    display: flex;
+  }
+}
 
 @media (max-width: 768px){
   .title{
